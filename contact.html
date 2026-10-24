@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#050505" />
+    <meta
+      name="description"
+      content="A private line to the SPOON concierge in Geneva. For collection enquiries, commissions and considered gifts."
+    />
+    <title>Private — SPOON</title>
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="portal-page">
+    <main class="portal-layout">
+      <form
+        class="portal-form"
+        action="mailto:concierge@spoon.house"
+        method="post"
+        enctype="text/plain"
+      >
+        <div class="portal-heading">
+          <a class="brand portal-mark" href="index.html" aria-label="SPOON home"
+            >SPOON<span>®</span></a
+          >
+          <p class="eyebrow">A private line to the house</p>
+          <h1>Begin a <em>conversation.</em></h1>
+          <p class="portal-intro">
+            For collection enquiries, personal commissions and considered gifts,
+            our concierge will be pleased to assist.
+          </p>
+        </div>
+        <div class="portal-fields">
+          <label for="guest-name"
+            >Your name<input
+              id="guest-name"
+              name="name"
+              autocomplete="name"
+              required
+          /></label>
+          <label for="guest-email"
+            >Email address<input
+              id="guest-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+          /></label>
+          <label for="inquiry-type"
+            >I am writing about<select id="inquiry-type" name="enquiry">
+              <option>Collection enquiries</option>
+              <option>Personal commission</option>
+              <option>A considered gift</option>
+              <option>Care and restoration</option>
+            </select></label
+          >
+          <label for="guest-message"
+            >A note to the house<textarea
+              id="guest-message"
+              name="message"
+              rows="3"
+              required
+            ></textarea>
+          </label>
+        </div>
+        <button
+          class="button button-primary portal-submit"
+          type="submit"
+          data-interactive
+        >
+          Send your enquiry <span>↗</span>
+        </button>
+        <p class="portal-note">
+          A member of our private team will reply within two working days.
+        </p>
+      </form>
+
+      <aside class="concierge-panel" aria-labelledby="concierge-title">
+        <p class="concierge-heading">
+          The Geneva maison <span>·</span> Switzerland
+        </p>
+        <h2 id="concierge-title">A considered<br /><em>exchange.</em></h2>
+        <address class="concierge-address">
+          <strong>SPOON · Private Concierge</strong>
+          <span>Chorsu 114</span>
+          <span>Namangan</span>
+          <span>Uzbekistan</span>
+        </address>
+        <a class="liaison" href="tel:+998954815774"
+          >+998 95 481 57 74 <span>↗</span></a
+        >
+        <a class="liaison" href="mailto:Aliyev@gmail.com"
+          >Aliyev@gmail.com<span>↗</span></a
+        >
+        <a
+          class="map-link"
+          href="https://www.google.com/maps/search/?api=1&amp;query=Chorsu%20114%2C%20Namangan%2C%20Uzbekistan"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Open in Google Maps <span>↗</span></a
+        >
+        <figure class="map-frame">
+          <iframe
+            title="Google Maps location of the SPOON Geneva maison"
+            src="https://www.google.com/maps?q=Rue%20du%20Rh%C3%B4ne%2014%2C%201204%20Gen%C3%A8ve%2C%20Switzerland&amp;z=16&amp;output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </figure>
+      </aside>
+    </main>
+  </body>
+</html>
